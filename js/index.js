@@ -49593,6 +49593,30 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/js/FirebaseConfig.js":
+/*!****************************************!*\
+  !*** ./resources/js/FirebaseConfig.js ***!
+  \****************************************/
+/*! exports provided: FirebaseConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FirebaseConfig", function() { return FirebaseConfig; });
+/**
+ * Created by Raphael Karanja on 2019-03-10.
+ */
+var FirebaseConfig = {
+  apiKey: "<API_KEY>",
+  authDomain: "<PROJECT_ID>.firebaseapp.com",
+  databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+  projectId: "<PROJECT_ID>",
+  storageBucket: "<BUCKET>.appspot.com",
+  messagingSenderId: "<SENDER_ID>"
+};
+
+/***/ }),
+
 /***/ "./resources/js/index.js":
 /*!*******************************!*\
   !*** ./resources/js/index.js ***!
@@ -49605,11 +49629,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
 /* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/index.esm.js");
+/* harmony import */ var _FirebaseConfig__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FirebaseConfig */ "./resources/js/FirebaseConfig.js");
 /**
  * Created by Raphael Karanja on 2019-03-10.
  */
 
 
+
+firebase__WEBPACK_IMPORTED_MODULE_0__["initializeApp"](_FirebaseConfig__WEBPACK_IMPORTED_MODULE_2__["FirebaseConfig"]);
 
 /***/ }),
 
